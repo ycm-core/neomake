@@ -116,8 +116,8 @@ function! neomake#makers#ft#python#flake8() abort
         \ 'args': ['--format=default'],
         \ 'errorformat':
             \ '%E%f:%l: could not compile,%-Z%p^,' .
-            \ '%A%f:%l:%c: %t%n %m,' .
-            \ '%A%f:%l: %t%n %m,' .
+            \ '%A%f:%l:%c: %t%[A-Z]%#%n %m,' .
+            \ '%A%f:%l: %t%[A-Z]%#%n %m,' .
             \ '%-G%.%#',
         \ 'postprocess': function('neomake#makers#ft#python#Flake8EntryProcess'),
         \ 'short_name': 'fl8',
