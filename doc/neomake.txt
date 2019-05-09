@@ -657,6 +657,7 @@ Neomake uses the following defaults: >
           \   'texthl': 'NeomakeMessageSign',
           \ }
      let g:neomake_info_sign = {'text': 'ℹ', 'texthl': 'NeomakeInfoSign'}
+     let g:neomake_style_sign = {'text': '★', 'texthl': 'NeomakeStyleSign'}
 <
 
 Default |highlight-groups| are created with those names, but only if they do
